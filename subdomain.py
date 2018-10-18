@@ -3,7 +3,7 @@ import sys
 import requests
 
 if __name__ == '__main__':
-    domain = input("Enter a domain: ")
+    domain = sys.argv[1]
     subdomain = []
 
     with open("dictionary.txt") as subs: 
