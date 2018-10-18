@@ -46,7 +46,6 @@ if __name__ == '__main__':
         for host in hosts:
             if ping(host) is not None:
                 r1 = scan(host, "tcp")
-                #r2 = scan(host, "udp")
                 for x, y in r1.items():
                     for k in y:
                         print(x + " " + k + '\n')
@@ -56,7 +55,6 @@ if __name__ == '__main__':
         host = sys.argv[1]
         if ping(host) is not None:
                 r1 = scan(host, "tcp")
-                #r2 = scan(host, "udp")
                 for x, y in r1.items():
                     for k in y:
                         print(x + " " + k + '\n')
